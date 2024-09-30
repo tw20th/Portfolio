@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is a showcase of my work.</p>
+    </header>
+
+    <!-- Flexboxで左右に並べるセクション -->
+    <div class="content-container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>This is a brief introduction about myself.</p>
+        </section>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I've worked on.</p>
+        </section>
+
+    </div>
+    
+    <!-- 問い合わせフォーム -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <p id="errorMessage" style="color: red;"></p> <!-- エラーメッセージを表示するための要素 -->
+    </form>
+</section>
+
+
+    
+
+    <!-- JavaScriptファイルを読み込む -->
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>
