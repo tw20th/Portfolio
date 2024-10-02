@@ -80,6 +80,39 @@ form input {
     margin-top: 10px;
 }
 
+/* ナビゲーションバーのスタイル */
+.navbar {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: var(--text-color);
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 
 /* レスポンシブデザイン: スマートフォン向けに縦並びに変更 */
 @media (max-width: 768px) {
@@ -93,4 +126,3 @@ form input {
         width: 80%; /* 各セクションの幅を調整 */
     }
 }
-
