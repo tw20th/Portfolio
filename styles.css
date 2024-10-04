@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     background-color: #ffffff; /* ベースカラー */
     color: #333333; /* テキストカラー */
+    text-align: center; /* 全体のテキストを中央寄せ */
 }
 
 
@@ -50,6 +51,7 @@ main {
     padding: 2rem;
     background-color: #f4f4f4; /* 灰色の背景 */
     border-radius: 8px; /* 角を丸くする */
+    text-align: center; /* メインコンテンツ内のテキストを中央寄せ */
 }
 
 /* セクションのスタイル */
@@ -64,4 +66,43 @@ footer {
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+/* フォームのスタイル */
+form {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 中央揃え */
+    gap: 1rem; /* フォーム要素間の間隔 */
+}
+
+form div {
+    width: 100%;
+    max-width: 400px; /* フォームの最大幅を指定 */
+    display: flex;
+    flex-direction: column; /* ラベルと入力欄を縦方向に並べる */
+}
+
+form label {
+    margin-bottom: 0.5rem; /* ラベルと入力欄の間隔 */
+}
+
+form input, form textarea {
+    width: 100%; /* 入力欄をフォームの幅に合わせる */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 0.5rem 2rem;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
 }
