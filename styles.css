@@ -16,10 +16,11 @@ body {
 
 /* ヘッダーのスタイル */
 header {
-    background-color: #3498db; /* メインカラー */
-    color: #ffffff;
+    background-color: #ffffff; /* ヘッダーを白に変更 */
+    color: #333333; /* テキストを濃い灰色に */
     padding: 1rem;
-    text-align: center; /* 中央揃え */
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* 境界線を追加 */
 }
 
 header h1 {
@@ -38,7 +39,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #333333; /* ナビゲーションのリンク色を濃い灰色に変更 */
     text-decoration: none;
 }
 
