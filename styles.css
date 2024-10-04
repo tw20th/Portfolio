@@ -7,11 +7,12 @@
 
 /* フォント設定 */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.6;
     background-color: #ffffff; /* ベースカラー */
     color: #333333; /* テキストカラー */
 }
+
 
 /* ヘッダーのスタイル */
 header {
