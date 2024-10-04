@@ -5,27 +5,30 @@
     box-sizing: border-box;
 }
 
-/* 全体のスタイル */
+/* フォント設定 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #ffffff; /* ベースカラー */
+    color: #333333; /* テキストカラー */
 }
 
 /* ヘッダーのスタイル */
 header {
-    background-color: #3498db;
-    color: white;
+    background-color: #3498db; /* メインカラー */
+    color: #ffffff;
     padding: 1rem;
+    text-align: center; /* 中央揃え */
 }
 
 header h1 {
+    font-family: 'Open Sans', sans-serif; /* ヘッディングのフォント */
     margin-bottom: 0.5rem;
 }
 
 nav ul {
     list-style-type: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -34,19 +37,28 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
 /* メインコンテンツのスタイル */
 main {
+    max-width: 800px; /* コンテンツ幅の制限 */
+    margin: 0 auto; /* 中央揃え */
     padding: 2rem;
+    background-color: #f4f4f4; /* 灰色の背景 */
+    border-radius: 8px; /* 角を丸くする */
+}
+
+/* セクションのスタイル */
+section {
+    margin-bottom: 2rem;
 }
 
 /* フッターのスタイル */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #333333; /* フッターの色 */
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
